@@ -1,0 +1,299 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+/* Our default values set as CSS variables */
+:root {
+  --font-family: "helvetica";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+body {
+  font-family: "helvetica" !important;
+  color: ivory;
+  background: orange;
+}
+
+/* Header/Blog Title */
+.header {
+  width: 100%;
+  padding: 3px;
+  font-size: 13px;
+  color: tomato;
+  text-align: center;
+
+}
+
+/* Create two unequal columns that float next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+  padding: 20px;
+}
+
+/* Footer */
+      .footer {
+        font-weight: 600;
+        display: flex;
+        width: 100%;
+        padding: 30px;
+}  
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+/* Page structure */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+img {
+  display: inline-block;
+  width: 400px;
+  padding: 30px;
+  border-radius: 5px;
+ 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 88%;
+  margin: 0 auto;\
+  flex-flow: column wrap;
+}
+
+/* Typography */
+hr {
+  border: 3px solid black;
+  border-radius: 0px;
+  width: 40%
+}
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.3 !important;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 0.8rem;
+  line-height: 1.3;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  word-spacing: -1rem;
+}
+h2 {
+  font-size: 2.2rem;  letter-spacing: 5px;
+
+
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+  display: inline;
+  width: 30%;
+  float: left;
+  padding: 0px 5% 1% 1%;
+  text-align: left
+
+}
+h5 {
+  font-size: 1rem;
+  display: inline;
+  width: 30%;
+  float: right;
+  padding: 0px 2% 0px 3%;
+    text-align: left
+
+}
+h6 {
+  font-size: 1rem;
+  display: inline;
+  width: 35%;
+  float: right;
+  padding: 0px 2% 0px 3%;
+    text-align: center
+}
+h7{
+  font-size: 0.8rem;
+}
+small,
+.text_small {
+  font-size: 0.9rem;
+}
+ul > li {  list-style-type: none}
+ol > li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1;
+  line-height: 1.3;
+  
+}
+
+/* linkstuff */
+
+a.title:link {
+  color: ivory;
+  text-decoration: none;
+}  
+a.title:visited {
+  color: ivory;
+  text-decoration: none;
+}
+a.title:hover {
+  color: white;
+  text-decoration: none;
+}
+a.title:active {
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+    color: ivory;
+   }
+  a:visited {
+    color: ivory;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+
+  }
+  a:active {
+    color: white;
+
+  }
+/* Title style adjustments */
+.posttitle {
+  line-height: 1;
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: 600;
+  float: left;
+  width: 100%;
+  height: 50%;
+  padding: 40px 40px 10px 40px}
+
+
+/* Layout: Home */
+.home {
+  justify-content: left;
+}
+.illo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.illustration {
+  max-width: 180px;
+  max-height: var(--image-max-width);
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+/* Post */
+.controls {
+  padding: 30px;
+}
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+  /
+  > <style
+  > * {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  text-align: left;
+  margin: 0.3rem;
+  width: 24%;
+}
+
+
+/* Add a card effect for articles */
+      .card {
+        font-family: arial;
+        color: black;
+        background-color: ivory;
+        padding: 1% 5% 40px 5%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        border-style: none none ridge none;
+        border-color: white;
+        border-width: 5px;
+        text-align: justify;
+        border-radius: 5px 5px 5px 5px;
+      }
+      a.card:link {
+  color: black
+}
+a.card:visited {
+  color: black
+}
+a.card:hover {
+  color: black
+}
+a.card:active
+{
+  color: black
+}
+
+.titlecard {
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
+
+}
+
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 13px;
+        }
+      }
+
